@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PhotoContainer from "./Components/PhotoContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PhotoContainer
+        url={
+          "https://www.bramidan.pl/admin/public/getimage.ashx?Crop=0&Image=/Files/Images/01_WEB-2017/04_References/Eiffel-Tower/Web_Eiffel-Tower_slider1_1600x900_Eiffel-Tower-Paris-and-green-lawn.jpg&Format=jpg&Width=2556&Height=0&Quality=75"
+        }
+        name={"Eiffel tower"}
+        location={"Parris"}
+      />
     </div>
   );
 }
