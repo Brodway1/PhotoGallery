@@ -1,15 +1,23 @@
-import PhotoProps from "../../interfaces/PhotoProps"
+import PhotoProps from "../../interfaces/PhotoProps";
 
 const PhotoContainer = (props: PhotoProps) => {
-    return (
-        <div className="container mx-auto h-1/4">
-            <img className={"object-contain"} src={props.url} alt={props.name} />
-            <div>
-                <h5>{props.name}</h5>
-                <span>{props.location}</span>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="container mx-auto h-1/2">
+      <img
+        className={"object-contain rounded-3xl w-full p-3"}
+        src={props.url}
+        alt={props.name}
+      />
+      <div>
+        <h5 className={"text-left text-xl font-semibold text-green-500 pl-5"}>
+          {props.name}
+        </h5>
+        <span className={"text-left pl-5 block"}>Location: {props.location}</span>
+        <span className={"p-3 pl-5 text-left w-full block"}>Description: {props.description}</span>
+      </div>
+      <hr />
+    </div>
+  );
+};
 
 export default PhotoContainer;
