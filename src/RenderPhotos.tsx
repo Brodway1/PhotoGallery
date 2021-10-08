@@ -1,14 +1,13 @@
-import React from "react";
 import PhotoContainer from "./Components/PhotoContainer";
 
 const RenderPhotos = (props: any) => {
   return (
-    <React.Fragment>
+    <div className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3`}>
       <PhotoContainer
         url={
           "https://www.bramidan.pl/admin/public/getimage.ashx?Crop=0&Image=/Files/Images/01_WEB-2017/04_References/Eiffel-Tower/Web_Eiffel-Tower_slider1_1600x900_Eiffel-Tower-Paris-and-green-lawn.jpg&Format=jpg&Width=2556&Height=0&Quality=75"
         }
-        name={"Eiffel tower"}
+        name={"Eiffel Tower"}
         location={"Parris, France"}
         description={
           "Photo of Eiffel Parris taken during summer holidays. A true beauty and a sight to behold."
@@ -37,7 +36,38 @@ const RenderPhotos = (props: any) => {
         }
         darkMode={props.darkMode}
       />
-    </React.Fragment>
+      <PhotoContainer
+        url={
+          "https://sagittariustravel.com/wp-content/uploads/2019/10/egypt-cairo-pyramids-of-giza-and-camels-2.jpg"
+        }
+        name={"Pyramids of Giza"}
+        location={"Giza City, Egypt"}
+        description={
+          "The Giza Pyramid Complex, also called the Giza Necropolis, is the site on the Giza Plateau in Greater Cairo, Egypt that includes the Great Pyramid of Giza, the Pyramid of Khafre, and the Pyramid of Menkaure, along with their associated pyramid complexes and the Great Sphinx of Giza. All were built during the Fourth Dynasty of the Old Kingdom of Ancient Egypt, between 2600 and 2500 BC. The site also includes several cemeteries and the remains of a workers village."
+        }
+        darkMode={props.darkMode}
+      />
+      <PhotoContainer
+        url={
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg"
+        }
+        name={"Colosseum"}
+        location={"Rome, Italy"}
+        description={
+          "The Colosseum  is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age. Construction began under the emperor Vespasian ( 69–79 AD) in 72 and was completed in 80 AD under his successor and heir, Titus "
+        }
+        darkMode={props.darkMode}
+      />
+      <PhotoContainer
+        url={"https://cdn.getyourguide.com/img/tour/5cadc48555e11.jpeg/148.jpg"}
+        name={"Stonehenge"}
+        location={"	Wiltshire, England"}
+        description={
+          "Stonehenge is a prehistoric monument on Salisbury Plain in Wiltshire, England, two miles (3 km) west of Amesbury. It consists of an outer ring of vertical sarsen standing stones, each around 13 feet (4.0 m) high, seven feet (2.1 m) wide, and weighing around 25 tons, topped by connecting horizontal lintel stones. Inside is a ring of smaller bluestones. Inside these are free-standing trilithons, two bulkier vertical Sarsens joined by one lintel. The whole monument, now ruinous, is orientated towards the sunrise on the summer solstice."
+        }
+        darkMode={props.darkMode}
+      />
+    </div>
   );
 };
 
