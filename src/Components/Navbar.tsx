@@ -5,9 +5,9 @@ import { RiMoonFill } from "react-icons/ri";
 const Navbar = (props: any) => {
   return (
     <div
-      className={`container ${
+      className={`container mx-auto h-1/4 ${
         props.darkMode ? "bg-gray-700" : "bg-gray-200"
-      } mx-auto h-1/4`}
+      }`}
     >
       <div className={"flex items-center justify-center w-full mb-12 "}>
         <div className={"pr-2"}>
@@ -22,14 +22,14 @@ const Navbar = (props: any) => {
               onChange={() => props.setDarkMode(!props.darkMode)}
             />
             <div
-              className={`block ${
+              className={`block w-14 h-8 rounded-full px-5 ${
                 props.darkMode ? "bg-gray-600" : "bg-gray-100"
-              } w-14 h-8 rounded-full px-5`}
+              }`}
             ></div>
             <div
-              className={`dot absolute left-1 top-1 ${
+              className={`dot absolute left-1 top-1 w-6 h-6 rounded-full transition ${
                 props.darkMode ? "bg-gray-700" : "bg-yellow-300"
-              } w-6 h-6 rounded-full transition`}
+              }`}
             ></div>
           </div>
           <div className={"pl-2"}>
