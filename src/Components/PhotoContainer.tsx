@@ -12,8 +12,8 @@ const PhotoContainer = (props: PhotoProps) => {
         <h5 className={"text-left text-xl font-semibold text-green-500 pl-5"}>
           {props.name}
         </h5>
-        <span className={"text-left pl-5 block"}>Location: {props.location}</span>
-        <span className={"p-3 pl-5 text-left w-full block"}>Description: {props.description}</span>
+        <span className={`text-left pl-5 block ${props.darkMode ? "text-white" : "text-black"}`}>Location: {props.location}</span>
+        <span className={`p-3 pl-5 text-left w-full block ${props.darkMode ? "text-white" : "text-black"}`}>Description: {props.description}</span>
       </div>
       <hr />
     </div>
