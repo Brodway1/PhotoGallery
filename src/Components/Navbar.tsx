@@ -39,6 +39,7 @@ const Navbar = (props: DarkMode) => {
           </div>
         </label>
       </div>
+
     </div>
   );
 };

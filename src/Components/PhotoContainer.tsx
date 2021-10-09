@@ -4,7 +4,7 @@ const PhotoContainer = (props: PhotoProps) => {
   return (
     <div className="container mx-auto h-1/2">
       <img
-        className={" max-h-full rounded-3xl w-full p-3 object-fit"}
+        className={`zoom max-h-full rounded-3xl w-full p-3`}
         src={props.url}
         alt={props.name}
       />
