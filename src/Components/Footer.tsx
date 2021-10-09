@@ -1,5 +1,6 @@
 import { RiGithubFill } from "react-icons/ri";
-const Footer = (props: any) => {
+import DarkMode from "../../interfaces/DarkMode";
+const Footer = (props: DarkMode) => {
   return (
     <div className={`container mx-auto text-xl py-5 ${props.darkMode ? "text-white" : "text-black"}`}>
       <span className={""}>Made by Grzegorz Niemas</span>

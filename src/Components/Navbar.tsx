@@ -1,8 +1,10 @@
 import "../App.css";
 import { RiSunFill } from "react-icons/ri";
 import { RiMoonFill } from "react-icons/ri";
+import DarkMode from "../../interfaces/DarkMode"
 
-const Navbar = (props: any) => {
+
+const Navbar = (props: DarkMode) => {
   return (
     <div
       className={`container mx-auto h-1/4 ${

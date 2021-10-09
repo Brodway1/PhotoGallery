@@ -15,7 +15,7 @@ function App() {
     <div className={`App ${darkMode ? "bg-gray-700" : "bg-gray-200"}`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <RenderPhotos darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
+      <Footer setDarkMode={setDarkMode} darkMode={darkMode} />
     </div>
   );
 }
